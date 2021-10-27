@@ -25,7 +25,20 @@
 body {
     font-family: var(--fonte-padrao);
     background-color: var(--cor05);
-} 
+}
+
+img.icone {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+div.redes {
+    height: 40px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 30px;
+}
 
 header {
     margin: auto;
@@ -54,7 +67,7 @@ nav > a {
 
 nav > a:hover {
     color: var(--cor02);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 main {
@@ -104,10 +117,32 @@ div.video > iframe {
     height: 90%;
 }
 
+#fonte {
+    font-size: 0.5em;
+}
+
 main p {
     padding: 10px 0px;
     text-indent: 30px;
     text-align: justify;
+}
+
+main h3 {
+    padding: 10px;
+}
+
+main h4 {
+    padding-top: 20px;
+}
+
+h4 > a {
+    text-decoration: none;
+    color: var(--cor02);
+    font-weight: bold;
+}
+
+h4 > a:hover {
+    text-decoration: underline;
 }
 
 div.preco {
@@ -119,15 +154,51 @@ div.preco {
     line-height: 1.5em;
 }
 
-div.preco > h2 {
+div.preco > h3 {
     background-color: var(--cor05);
     margin: -20px -20px 10px -20px;
     padding: 10px;
     color: white;
     font-family: var(--fonte-titulo);
+    font-size: 1em;
     font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor04);
+}
+
+aside a:hover {
+    color: var(--cor02);
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: var(--cor01);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer > p {
+    padding: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+footer a:hover {
+    color: var(--cor01);
+    transition-duration: 0.5s;
 }
 
 
