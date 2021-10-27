@@ -10,11 +10,11 @@
     --fonte-destaque: 'Architects Daughter', cursive;
     --fonte-titulo: 'Montserrat', sans-serif;
     --fonte-padrao: 'Lato', sans-serif;
-    --cor01: #8DD5E3;
-    --cor02: #47C4DE;
-    --cor03: #3797AB;
-    --cor04: #1E545E;
-    --cor05: #3A585E; 
+    --cor01: #5ce1e6;
+    --cor02: #247BA0;
+    --cor03: #F6E27F;
+    --cor04: #6C7D47;
+    --cor05: #222326; 
 }
 
 * {
@@ -24,48 +24,36 @@
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: rgba(176, 196, 222, 0.699);
+    background-color: var(--cor05);
 } 
 
 header {
     margin: auto;
-    text-align: center;
-    background-image: linear-gradient(to top, var(--cor04), var(--cor02));
-}
-
-header > h1 {
-    padding-top: 50px;
-    font-family: var(--fonte-destaque);
-    color: white;
-    font-weight: bold;
-    font-size: 3.5em;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.26);
-}
-
-header > p {
     padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: var(--fonte-padrao);
-    font-weight: bold;
-    font-size: 1.5em;
-    color: var(--cor01);
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    background-color: black;
 }
 
 nav {
-    background-color: var(--cor04);
+    background-color: black;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin: auto;
     text-align: center;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+    margin-bottom: 10px;
 }
 
 nav > a {
     text-decoration: none;
     font-family: var(--fonte-titulo);
-    color: white;
-    font-weight: bold;
+    color: var(--cor01);
+    font-weight: normal;
     padding-right: 20px;
+}
+
+nav > a:hover {
+    color: var(--cor02);
 }
 
 main {
